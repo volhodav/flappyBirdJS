@@ -10,10 +10,10 @@ var pipeNorth = new Image();
 var pipeSouth = new Image();
 
 bird.src = "images/bird.png";
-bg.src = "images/bg.png";
+bg.src = "images/bg1.png";
 fg.src = "images/fg.png";
-pipeNorth.src = "images/pipeNorth.png";
-pipeSouth.src = "images/pipeSouth.png";
+pipeNorth.src = "images/pipeNorth1.png";
+pipeSouth.src = "images/pipeSouth1.png";
 
 //on key down 
 document.addEventListener("keydown", moveUp);
