@@ -9,14 +9,15 @@ var fg = new Image();
 var pipeNorth = new Image();
 var pipeSouth = new Image();
 
-bird.src = "images/bird.png";
+bird.src = "images/bird1.png";
 bg.src = "images/bg1.png";
-fg.src = "images/fg.png";
+fg.src = "images/fg1.png";
 pipeNorth.src = "images/pipeNorth1.png";
 pipeSouth.src = "images/pipeSouth1.png";
 
 //on key down 
 document.addEventListener("keydown", moveUp);
+document.addEventListener("touchend", moveUp);
 
 function moveUp() {
     bY -= 25;
@@ -80,7 +81,7 @@ function draw() {
 
     ctx.drawImage(bird, bX, bY);
 
-    ctx.fillStyle = "#000";
+    ctx.fillStyle = "#f368e0";
     ctx.font = "20px Verdana";
     ctx.fillText("Score : "+score,10,cvs.height -20);
 
