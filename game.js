@@ -15,8 +15,9 @@ fg.src = "images/fg1.png";
 pipeNorth.src = "images/pipeNorth1.png";
 pipeSouth.src = "images/pipeSouth1.png";
 
-//on key down 
+//on key down & on press (4 mobile)
 document.addEventListener("keydown", moveUp);
+document.addEventListener("touchstart", moveUp);
 document.addEventListener("touchend", moveUp);
 
 function moveUp() {
